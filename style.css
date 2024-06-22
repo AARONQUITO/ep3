@@ -1,0 +1,201 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    --color1:#733A19;
+    --color2:#D9BD9C;
+    --color3:#D9D9D9;
+    --color4:#262626;
+}
+body{
+    background-image: url();
+}
+
+main{
+    min-height: 100vh;
+   background: linear-gradient(rgba(5,7,12,0.4),rgba(5,7,12,0.4)),
+   url("img/fondo.jpg") no-repeat center center fixed; 
+    background-size:cover;
+    color:white;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin:20px;
+}
+.menu li{
+    padding:10px;
+}
+.menu li a{
+    text-decoration: none;
+    padding:10px;
+    text-transform: uppercase;
+    color:white;
+    
+}
+.menu li a:hover{
+    opacity: 0.5;
+}
+
+.redes{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 20px;
+
+}
+.redes li a{
+    padding: 5px;
+}
+.redes li a:hover{
+    opacity: 0.5;
+}
+.redes li a img{
+    filter: invert(100%);
+}
+h1{
+    font-size: 5em;
+    letter-spacing: 7px;
+    padding:20px;
+    font-style: italic;
+    text-align: center;
+
+}
+
+span{
+    font-style: oblique;
+    opacity: 0.75;
+}
+h2{
+    font-size: 1.5em;
+    margin: 20px;
+    text-align: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+#botones nav ul a{
+    color:blue;
+}
+#caf{
+    border-bottom: 2px solid tomato;
+}
+#contenido{
+    padding:20px;
+}
+
+#cafe .redes li a img{
+    filter: invert(0);
+}
+h1 a{
+    color:var(--color4);
+    text-decoration: none;
+
+}
+
+#botones{
+    display: grid;
+    grid-template-areas: "header header header"
+    "map imput info"
+    "img val con"
+    "footer footer footer"
+    "tex tex tex";
+    grid-template-columns: 1fr 3fr 2fr;
+    gap: 10px;
+    width: 75%;
+    margin: auto;
+}
+
+#navegador{
+    grid-area: header;
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 20;
+    border:1px solid white;
+
+
+}
+
+.info{
+    grid-area: footer;
+    background: radial-gradient(orange,yellow);
+    padding: 10px;
+    box-shadow: 10px 10px black;
+    margin: 10px;
+
+}
+
+#cont p{
+    text-align: center;
+}
+.imput{
+    grid-area: info;
+    background:linear-gradient(to bottom, yellow,gold);
+    padding: 10px;
+    box-shadow: 10px 10px black;
+    margin: 10px;
+}
+
+.map{
+    grid-area:  imput;
+     box-shadow: 10px 10px black;
+     margin: 10px;
+
+}
+.red{
+    grid-area: tex;
+}
+#cinco {
+    text-align: center;
+    grid-area: footer;
+}
+#dos{
+    grid-area: val;
+    background: radial-gradient(yellow,gold,orange);
+    padding: 10px;
+    box-shadow: 10px 10px black;
+    margin: 10px;
+}
+#tres{
+    grid-area: con;
+}
+#cuatro{
+    grid-area: img;
+}
+
+#uno{
+    grid-area: imput;
+    background: linear-gradient(blue,skyblue);
+    border-radius: 15px;
+    box-shadow: 10px 10px black;
+}
+#moto3{
+    height: 500px;
+    width: 200px;
+    box-shadow: 10px 10px gray;
+}
+#moto1{
+    height: 500px;
+    width: 200px;
+    box-shadow: 10px 10px gray;
+    }
